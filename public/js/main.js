@@ -112,7 +112,7 @@ function postIdea(idea,owner){
 }
 
 /* Init SOCKET.IO connection */
-var socket = new io.Socket(null, {port: 8080, rememberTransport: false});
+var socket = new io.Socket(null, {port: 3000, rememberTransport: false});
 socket.connect();
 socket.on('message', function(obj){
 	
