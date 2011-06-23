@@ -78,7 +78,8 @@ send404 = function(res){
 	res.end();
 };
 
-server.listen(8080, {
+var port = process.env.PORT || 3000;
+server.listen(port, {
   transportOptions: {
     'xhr-polling': {
       closeTimeout: 1000 * 60 * 5
